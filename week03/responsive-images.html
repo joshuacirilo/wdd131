@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Image Gallery</title>
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <!-- Large image for wide screens -->
+                <source srcset="images/brazil_temple_large.webp" media="(min-width: 1000px)">
+                
+                <!-- Medium image for medium screens -->
+                <source srcset="images/brazil_temple_medium.webp" media="(min-width: 500px)">
+                
+                <!-- Fallback image, visible if the above conditions aren't met -->
+                <img src="images/brazil_temple_small.webp" alt="Brazil Temple located in [City, Country]" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
