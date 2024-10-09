@@ -1,0 +1,14 @@
+@media screen and (min-width: 500px) {
+    /* Header styling */
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    /* Main element styling for two equal columns */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; /* Optional: Adjusts space between columns */
+    }
+}
