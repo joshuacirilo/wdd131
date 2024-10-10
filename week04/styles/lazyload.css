@@ -1,0 +1,36 @@
+/* temples.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: auto; /* Ensures aspect ratio */
+    max-height: 600px; /* Adjust this as needed for your images */
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards; /* Apply the fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+figcaption {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
