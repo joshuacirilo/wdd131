@@ -45,10 +45,9 @@ main h2 {
     margin-top: 0;
 }
 
-/* Responsive grid for temple cards */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust for auto layout */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
     gap: 1rem;
     padding: 1rem;
 }
@@ -79,7 +78,7 @@ footer p {
     font-size: 0.8rem;
 }
 
-/* Hamburger */
+
 .nav-menu {
     display: none;
 }
@@ -101,7 +100,7 @@ footer p {
     }
 }
 
-/* Temple card styling */
+
 .temple-card {
     border: 1px solid #ccc;
     padding: 15px;
@@ -112,10 +111,10 @@ footer p {
     margin: 1rem;
 }
 
-/* Ensures images are consistently 400x250 with the cover aspect */
+
 .temple-image {
     width: 400px;
     height: 250px;
-    object-fit: cover; /* Ensures images cover the area without distortion */
+    object-fit: cover; 
     border-radius: 8px;
 }
