@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const year = document.querySelector("#year");
-    const grid = document.querySelector(".grid"); // Container for temple cards
+    const grid = document.querySelector(".grid"); 
 
-    // Use the date object
+
     const today = new Date();
     year.innerHTML = `© <span class="highlight">${today.getFullYear()}</span> 🔭 Joshua Cirilo Alegria 🔭 Guatemala`;
 
     const lastModified = document.lastModified;
     document.querySelector('footer p').textContent = `Last Modification: ${lastModified}`;
 
-    // Hamburger menu
+
     const hamburger = document.querySelector("#hamburger");
     const menu = document.querySelector("#menu");
 
@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Hamburger button or menu element not found!');
     }
 
-    // Function to clear existing temple cards
+    
     function clearGrid() {
-        grid.innerHTML = ''; // Clear current grid content
+        grid.innerHTML = ''; 
     }
 
-    // Function to create and append a temple card
+
     function createTempleCard(temple) {
         const card = document.createElement('div');
         card.classList.add('temple-card');
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = document.createElement('img');
         img.src = temple.imageUrl;
         img.alt = `${temple.templeName} image`;
-        img.loading = 'lazy'; // Enable lazy loading
+        img.loading = 'lazy'; 
         card.appendChild(img);
 
         const name = document.createElement('h3');
@@ -57,38 +57,37 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.appendChild(card);
     }
 
-    // Function to filter and display temples based on a condition
+   
     function displayFilteredTemples(filterCondition) {
-        clearGrid(); // Clear the existing cards before displaying new ones
+        clearGrid(); 
         temples.filter(filterCondition).forEach(createTempleCard);
     }
 
-    // Event listeners for menu items
+
     document.getElementById('home').addEventListener('click', () => {
-        displayFilteredTemples(() => true); // Home: Show all temples
+        displayFilteredTemples(() => true); 
     });
 
     document.getElementById('old').addEventListener('click', () => {
-        displayFilteredTemples(temple => new Date(temple.dedicated).getFullYear() < 1900); // Old: Temples built before 1900
+        displayFilteredTemples(temple => new Date(temple.dedicated).getFullYear() < 1900); 
     });
 
     document.getElementById('new').addEventListener('click', () => {
-        displayFilteredTemples(temple => new Date(temple.dedicated).getFullYear() > 2000); // New: Temples built after 2000
+        displayFilteredTemples(temple => new Date(temple.dedicated).getFullYear() > 2000); 
     });
 
     document.getElementById('large').addEventListener('click', () => {
-        displayFilteredTemples(temple => temple.area > 90000); // Large: Temples larger than 90,000 square feet
+        displayFilteredTemples(temple => temple.area > 90000); 
     });
 
     document.getElementById('small').addEventListener('click', () => {
-        displayFilteredTemples(temple => temple.area < 10000); // Small: Temples smaller than 10,000 square feet
+        displayFilteredTemples(temple => temple.area < 10000); 
     });
 
-    // Initially display all temples (Home)
     displayFilteredTemples(() => true);
 });
 
-// Temple data (unchanged)
+
 const temples = [
     {
         templeName: "Aba Nigeria",
