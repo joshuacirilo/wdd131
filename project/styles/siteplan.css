@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Roboto:wght@400;700&display=swap');
+
+
+/* Color Scheme */
+:root {
+    --primary-color: #000357;
+    /* Turquoise for headings and accents */
+    --secondary-color: #D2B48C;
+    /* Warm Sand for background and paragraph text */
+    --text-color: #333333;
+    /* Dark gray for body text */
+}
+
+/* Apply global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+p,
+ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Styling for lists */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* Add some padding and border to sections */
+section {
+    padding: 15px;
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
