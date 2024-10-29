@@ -1,0 +1,116 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 40px; 
+}
+
+form {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 20px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 6px; 
+    margin-bottom: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+
+fieldset {
+    border: none;
+    margin-bottom: 12px; 
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label[for="rating-1"],
+label[for="rating-2"],
+label[for="rating-3"],
+label[for="rating-4"],
+label[for="rating-5"] {
+    font-size: 12px;
+    color: #f39c12; 
+    padding-left: 0;
+}
+
+textarea {
+    height: 50px; 
+}
+
+input[type="submit"] {
+    background-color: #4b2354;
+    color: white;
+    border: none;
+    padding: 8px; 
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 12px; 
+}
+
+input[type="submit"]:hover {
+    background-color: #613769;
+}
+
+
+footer {
+    margin-top: 15px; 
+    text-align: center;
+    font-size: 12px; 
+    color: #666;
+}
+
+footer p {
+    margin: 3px 0;
+}
+
+footer p:first-child {
+    color: #4b2354;
+    font-weight: bold;
+}
+
+footer p:last-child {
+    font-style: italic;
+}

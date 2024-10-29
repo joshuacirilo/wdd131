@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/review.css"> 
+    <script>
+        
+        window.onload = function() {
+            const reviewCountKey = 'reviewCounter';
+            let reviewCount = parseInt(localStorage.getItem(reviewCountKey)) || 0;
+            reviewCount += 1;
+            localStorage.setItem(reviewCountKey, reviewCount);
+            
+            
+            document.getElementById('review-counter').textContent = `Reseñas completadas: ${reviewCount}`;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>¡Gracias por tu reseña!</h1>
+        <p>Tu reseña ha sido enviada exitosamente.</p>
+        <p id="review-counter">Reseñas completadas: 0</p>
+
+
+        <button onclick="window.location.href='form.html'">Volver al formulario</button>
+    </div>
+</body>
+
+</html>
