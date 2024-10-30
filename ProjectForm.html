@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals -</title>
+    <meta name="description"
+        content="Hello my name is  and I am in the course WDD 131 - Dynamic Web Fundamentals, this is my form for my project">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="styles/ProjectForm.css">
+    <script src="scripts/ProjectForm.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/GuatemalaLogo.png" alt="Guatemala Logo">
+        </div>
+        <h1>Travel Around Guatemala</h1>
+        <nav>
+            <a href="project.html">Home</a>
+            <a href="#">Be part of us</a>
+            <a href="index.html">About me</a>
+        </nav>
+    </header>
+
+    <form action="ReviewProject.html" method="get">
+        <h1>Help us to know your opinion</h1>
+
+
+        <label for="product-name">Which is your favorite place?</label>
+        <select id="product-name" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <label for="rating-1">
+                <input type="radio" id="rating-1" name="rating" value="1" required>
+                &#9733;
+            </label>
+            <label for="rating-2">
+                <input type="radio" id="rating-2" name="rating" value="2">
+                &#9733;&#9733;
+            </label>
+            <label for="rating-3">
+                <input type="radio" id="rating-3" name="rating" value="3">
+                &#9733;&#9733;&#9733;
+            </label>
+            <label for="rating-4">
+                <input type="radio" id="rating-4" name="rating" value="4">
+                &#9733;&#9733;&#9733;&#9733;
+            </label>
+            <label for="rating-5">
+                <input type="radio" id="rating-5" name="rating" value="5">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+            </label>
+        </fieldset>
+
+        <label for="installation-date">Date it was filled</label>
+        <input type="date" id="installation-date" name="installationDate" required>
+
+        <fieldset>
+            <legend>What is your favorite part?</legend>
+            <label for="durability">
+                <input type="checkbox" id="durability" name="features" value="Durability">
+                History
+            </label>
+            <label for="ease-of-use">
+                <input type="checkbox" id="ease-of-use" name="features" value="Ease of Use">
+                Nature
+            </label>
+            <label for="performance">
+                <input type="checkbox" id="performance" name="features" value="Performance">
+                Culture
+            </label>
+        </fieldset>
+
+
+        <label for="written-review">Written Review (Optional)</label>
+        <textarea id="written-review" name="writtenReview"></textarea>
+
+
+        <label for="user-name">Your Name (Optional)</label>
+        <input type="text" id="user-name" name="userName">
+
+
+        <input type="submit" value="Post Review">
+
+        <footer>
+            <p id="full"></p>
+            <p id="world-full"></p>
+            <p id="short"></p>
+            <p id="medium"></p>
+            <p id="year"></p>
+        </footer>
+
+
+    </form>
+
+</body>
+
+</html>
